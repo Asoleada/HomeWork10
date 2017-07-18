@@ -2,7 +2,18 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif; }
 
+@media screen and (min-width: 992px) {
+  .width {
+    width: 960px;
+    margin: 0 auto; } }
+#contNav {
+  background-color: aquamarine;
+  height: 40px;
+  overflow: hidden; }
+
 #contact {
+  background-color: lightblue;
+  float: left;
   font-size: 12px;
   color: #787878; }
   #contact a {
@@ -11,10 +22,20 @@ body {
   #contact li {
     overflow: hidden;
     margin-top: 10px;
-    margin-right: 40px; }
+    margin-right: 20px; }
   #contact i {
     color: #777;
     margin-right: 5px;
     font-size: 14px; }
+
+#icons {
+  background-color: bisque;
+  float: right;
+  padding: 0;
+  margin: 0; }
+  #icons a {
+    padding-right: 5px;
+    padding-top: 10px;
+    color: #777; }
 
 /*# sourceMappingURL=style.css.map */
