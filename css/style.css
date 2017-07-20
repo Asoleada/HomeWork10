@@ -1,41 +1,73 @@
-/*
-Error: Invalid CSS after "}": expected selector or at-rule, was "/**"
-        on line 6 of style.scss
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif; }
 
-1: body {
-2:   margin: 0;
-3:   font-family: "Open Sans", sans-serif;
-4: }
-5: 
-6: /**
-7: @media screen and (min-width:992px) {
-8:   .width {
-9:     width: 960px;
-10:     margin: 0 auto;
-11:   }
+@media screen and (min-width: 992px) {
+  .width {
+    width: 960px;
+    margin: 0 auto; } }
+#contNav {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e4e4e4; }
 
-Backtrace:
-style.scss:6
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:42:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/bin/scss:13:in `<top (required)>'
-C:/Ruby24-x64/bin/scss:22:in `load'
-C:/Ruby24-x64/bin/scss:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected selector or at-rule, was \"/**\"\A         on line 6 of style.scss\A \A 1: body {\A 2:   margin: 0;\A 3:   font-family: \"Open Sans\", sans-serif;\A 4: }\A 5: \A 6: /**\A 7: @media screen and (min-width:992px) {\A 8:   .width {\A 9:     width: 960px;\A 10:     margin: 0 auto;\A 11:   }"; }
+#contact {
+  float: left;
+  font-size: 12px;
+  color: #787878; }
+  #contact a {
+    color: #787878;
+    padding: 0; }
+  #contact i {
+    color: #777;
+    margin-right: 5px;
+    font-size: 14px; }
+
+li.company {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 0; }
+
+li#englishMain {
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 0; }
+
+#contact a:hover {
+  background-color: #f9f9f9; }
+
+#english {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 99999; }
+
+li#englishMain:hover #english {
+  display: block; }
+
+#icons {
+  padding-right: 15px;
+  padding-top: 5px;
+  margin: 0;
+  box-sizing: border-box; }
+  #icons a {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #777; }
+
+#icons a:hover {
+  background-color: #18aeac;
+  color: white; }
+
+#vimeo:hover {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+.aIcons:hover {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -3,14 +3,14 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/**
+
 @media screen and (min-width:992px) {
   .width {
     width: 960px;
     margin: 0 auto;
   }
 }
-**/
+
 
 
 $contact-text-color: #787878;
@@ -23,8 +23,7 @@ $contacts-bottom-line-color: #e4e4e4;
 
 
 #contNav {
-  height: 40px;
-  overflow: hidden;
+
   background-color: $contacts-background-color;
   border-bottom: 1px solid $contacts-bottom-line-color;
 }
@@ -43,11 +42,7 @@ $contacts-bottom-line-color: #e4e4e4;
 
   }
 
-  li{
-    overflow:hidden;
-    margin-top: 10px;
-    margin-right: 35px;
-  }
+
 
   i {
     color: $icon-color;
@@ -58,8 +53,41 @@ $contacts-bottom-line-color: #e4e4e4;
 }
 
 
+li.company {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 0;
+}
+
+
+li#englishMain {
+  margin-top:10px;
+  margin-right: 25px;
+  margin-bottom:0;
+}
+
+
 #contact a:hover{
   background-color: $contacts-background-color;
+}
+
+
+
+#english {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 99999;
+}
+
+li#englishMain:hover {
+  #english {
+    display: block;
+
+  }
+
 }
 
 
@@ -100,4 +128,9 @@ $contacts-bottom-line-color: #e4e4e4;
 .aIcons:hover {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+
+#english {
+
 }
