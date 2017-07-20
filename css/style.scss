@@ -4,12 +4,6 @@ body {
 }
 
 
-@media screen and (min-width:992px) {
-  .width {
-    width: 960px;
-    margin: 0 auto;
-  }
-}
 
 
 
@@ -18,7 +12,7 @@ $icon-color: #777;
 $hover-color-green: #18aeac;
 $contacts-background-color: #f9f9f9;
 $contacts-bottom-line-color: #e4e4e4;
-
+$color-light-green: #19b8b5;
 
 
 
@@ -57,15 +51,16 @@ li.company {
   overflow: hidden;
   margin-top: 10px;
   margin-right: 25px;
-  margin-bottom: 0;
+
 }
 
 
 li#englishMain {
   margin-top:10px;
   margin-right: 25px;
-  margin-bottom:0;
 }
+
+
 
 
 #contact a:hover{
@@ -75,18 +70,55 @@ li#englishMain {
 
 
 #english {
-  display: none;
+display: none;
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 30px;
+  left: 0;
   z-index: 99999;
+  width: 20%;
+  font-size: 14px;
+  font-style: italic;
+
+
+  ul {
+    list-style-type: none;
+    background-color: $color-light-green;
+  }
+
+a{
+  color: white;
+  background-color: $color-light-green;
 }
+
+  i {
+    color: white;
+  }
+
+}
+
+
+#english a:hover{
+  background-color: $hover-color-green;
+}
+
+#english ul:hover{
+  background-color: $hover-color-green;
+}
+
+
 
 li#englishMain:hover {
   #english {
     display: block;
 
   }
+
+}
+
+
+
+#english a:hover{
+  text-decoration: none;
 
 }
 
@@ -103,12 +135,9 @@ li#englishMain:hover {
 
 
   a{
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top:5px;
-    padding-bottom: 5px;
+    padding: 5px 10px;
+    margin-bottom:5px;
     color: $icon-color;
-
   }
 
 }
@@ -116,7 +145,6 @@ li#englishMain:hover {
 
 #icons a:hover {
   background-color: $hover-color-green;
-
  color: white;
 }
 
@@ -131,6 +159,4 @@ li#englishMain:hover {
 }
 
 
-#english {
 
-}
