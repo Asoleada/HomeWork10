@@ -13,7 +13,7 @@ $hover-color-green: #18aeac;
 $contacts-background-color: #f9f9f9;
 $contacts-bottom-line-color: #e4e4e4;
 $color-light-green: #19b8b5;
-$color-light-green2: #79e1df;
+$color-light-green2: #1ccdca;
 $color-dark-grey: #324545;
 
 
@@ -183,11 +183,7 @@ li#englishMain:hover {
 
 
 
-#shopping {
-  display: inline-block;
-  width: 30px;
-  float:right;
-}
+
 
 
 #enar {
@@ -228,15 +224,41 @@ li#home:hover {
 
 #enar a:hover{
 background-color: white;
-  color: $color-light-green;
+  color: $color-light-green2;
 }
 
 
+#searchBorder {
+  width: 200px;
+  height: 40px;
+  border: 1px solid $contacts-bottom-line-color;
+  border-radius: 20px;
+
+
+input{
+  border:none;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+}
 
 
 #searchButton {
+  border: none;
   border-radius: 50%;
+margin-left:5px;
+ color: $color-light-green2;
+}
+
+#searchButton:hover{
+  background-color: white;
 }
 
 
 
+#cart {
+  display: inline-block;
+  width: 30px;
+  float:right;
+}
