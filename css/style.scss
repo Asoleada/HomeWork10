@@ -78,11 +78,13 @@ display: none;
   width: 20%;
   font-size: 14px;
   font-style: italic;
-
+  background-color: $color-light-green;
 
   ul {
     list-style-type: none;
     background-color: $color-light-green;
+    margin-left:0;
+    padding-left:0;
   }
 
 a{
@@ -160,3 +162,8 @@ li#englishMain:hover {
 
 
 
+#shopping {
+  display: inline-block;
+  width: 30px;
+  float:right;
+}

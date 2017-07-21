@@ -38,10 +38,13 @@ li#englishMain {
   z-index: 99999;
   width: 20%;
   font-size: 14px;
-  font-style: italic; }
+  font-style: italic;
+  background-color: #19b8b5; }
   #english ul {
     list-style-type: none;
-    background-color: #19b8b5; }
+    background-color: #19b8b5;
+    margin-left: 0;
+    padding-left: 0; }
   #english a {
     color: white;
     background-color: #19b8b5; }
@@ -81,5 +84,10 @@ li#englishMain:hover #english {
 .aIcons:hover {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px; }
+
+#shopping {
+  display: inline-block;
+  width: 30px;
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */
