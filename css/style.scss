@@ -13,7 +13,8 @@ $hover-color-green: #18aeac;
 $contacts-background-color: #f9f9f9;
 $contacts-bottom-line-color: #e4e4e4;
 $color-light-green: #19b8b5;
-
+$color-light-green2: #79e1df;
+$color-dark-grey: #324545;
 
 
 #contNav {
@@ -58,6 +59,8 @@ li.company {
 li#englishMain {
   margin-top:10px;
   margin-right: 25px;
+  cursor: pointer;
+  height: 30px;
 }
 
 
@@ -75,38 +78,49 @@ display: none;
   top: 30px;
   left: 0;
   z-index: 99999;
-  width: 20%;
+  width: 100px;
   font-size: 14px;
   font-style: italic;
-  background-color: $color-light-green;
+  background-color: $color-light-green2;
+
 
   ul {
     list-style-type: none;
-    background-color: $color-light-green;
+    background-color: $color-light-green2;
     margin-left:0;
     padding-left:0;
   }
 
 a{
   color: white;
-  background-color: $color-light-green;
+  background-color:$color-light-green2;
+  display:block;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
+
 
   i {
     color: white;
+    padding-left: 25px;
   }
 
 }
 
 
+
+
+
+#english li:hover{
+  background-color: $color-light-green;
+}
+
+
 #english a:hover{
-  background-color: $hover-color-green;
+  background-color: $color-light-green;
 }
-
-#english ul:hover{
-  background-color: $hover-color-green;
-}
-
 
 
 li#englishMain:hover {
@@ -121,6 +135,11 @@ li#englishMain:hover {
 
 #english a:hover{
   text-decoration: none;
+
+  #english{
+    display:block;
+  }
+
 
 }
 
@@ -150,6 +169,8 @@ li#englishMain:hover {
  color: white;
 }
 
+
+
 #vimeo:hover {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -167,3 +188,55 @@ li#englishMain:hover {
   width: 30px;
   float:right;
 }
+
+
+#enar {
+  border-bottom: 1px solid $contacts-bottom-line-color;
+}
+
+#homeDrop {
+display:none;
+}
+
+
+li#home:hover {
+
+#homeDrop {
+  display:block;
+}
+
+}
+
+
+#enar{
+  font-size: 12px;
+
+  li{
+    padding-top: 15px;
+  }
+
+  a {
+    color: $contact-text-color;
+    font-weight: bold;
+  }
+
+}
+
+#enarPic {
+  padding-right: 40px;
+}
+
+#enar a:hover{
+background-color: white;
+  color: $color-light-green;
+}
+
+
+
+
+#searchButton {
+  border-radius: 50%;
+}
+
+
+
