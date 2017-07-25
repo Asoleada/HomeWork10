@@ -1,5 +1,5 @@
 $('#nav-toggle1').on('click', function(){
-    var myDiv = $('#nav-tablet');
+    var myDiv = $('#contNav2');
 
     if (myDiv.hasClass('hidden')) {
         myDiv.removeClass('hidden');
@@ -12,7 +12,7 @@ $('#nav-toggle1').on('click', function(){
 
 
 $('#nav-toggle').on('click', function(){
-    var myDivMob = $('#nav-mobile');
+    var myDivMob = $('#contNav3');
 
     if (myDivMob.hasClass('hidden')) {
         myDivMob.removeClass('hidden');
@@ -20,3 +20,28 @@ $('#nav-toggle').on('click', function(){
         myDivMob.addClass('hidden');
     }
 });
+
+
+
+$('#nav-toggle-enar2').on('click', function(){
+    var myDivEnar = $('#enar2ul');
+
+    if (myDivEnar.hasClass('hidden')) {
+        myDivEnar.removeClass('hidden');
+    } else {
+        myDivEnar.addClass('hidden');
+    }
+});
+
+
+
+
+
+    $(window).scroll(function() {
+
+        if ($(window).scrollTop() > 20) {
+            $('enar').addClass('fixedClass');
+        } else {
+            $('enar').removeClass('fixedClass');
+        }
+    });
