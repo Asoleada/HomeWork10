@@ -850,7 +850,6 @@ background-color: $drop-list-background;
 
 
 @media screen
-and (min-width:768px)
 and (max-width:991px)
 
 {
@@ -866,13 +865,37 @@ and (max-width:991px)
   display: none;
 }
 
+#enar2ul{
+  display:none;
+}
+
 
 @media screen
-and (min-width:768px)
 and (max-width:991px) {
   #enar2  {
     display: block;
   }
+
+  #enar2ul{
+    display: block;
+  }
+
+}
+
+@media screen
+and (max-width:767px) {
+  #enarPicture2  {
+    margin-left: 100px;
+  }
+
+  #searchElements{
+    margin-left: 100px;
+  }
+
+  #enar2first {
+    padding-bottom: 15px;
+  }
+
 }
 
 

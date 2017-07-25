@@ -453,15 +453,30 @@ li#home:hover #homeDrop {
 #nav-toggle-enar2 {
   display: none; }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   #nav-toggle-enar2 {
     display: block; } }
 #enar2 {
   display: none; }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+#enar2ul {
+  display: none; }
+
+@media screen and (max-width: 991px) {
   #enar2 {
+    display: block; }
+
+  #enar2ul {
     display: block; } }
+@media screen and (max-width: 767px) {
+  #enarPicture2 {
+    margin-left: 100px; }
+
+  #searchElements {
+    margin-left: 100px; }
+
+  #enar2first {
+    padding-bottom: 15px; } }
 #enar2first {
   border-bottom: 1px solid #e4e4e4; }
 
