@@ -1,12 +1,23 @@
-// $(window).scroll(function() {
-//
-//     if ($(window).scrollTop() > 20) {
-//         $('#enar').addClass('fixedClass');
-//     } else {
-//         $('#enar').removeClass('fixedClass');
-//     }
-// });
-//
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 20) {
+        $('#enar').addClass('fixedClass');
+    } else {
+        $('#enar').removeClass('fixedClass');
+    }
+});
+
+
+
+
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 20) {
+        $('#enar2').addClass('fixedClass2');
+    } else {
+        $('#enar2').removeClass('fixedClass2');
+    }
+});
 
 
 
@@ -45,8 +56,6 @@ $('#nav-toggle-enar2').on('click', function(){
         myDivEnar.addClass('hidden');
     }
 });
-
-
 
 
 

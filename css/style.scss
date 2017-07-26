@@ -312,14 +312,16 @@ li#englishMain2 {
 
 #english2 {
   display: none;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  z-index: 99999;
+  position: fixed;
+  top: 40px;
+
+  z-index: 999999;
   width: 100px;
+  height: 60px;
   font-size: 14px;
   font-style: italic;
   background-color: $color-light-green2;
+  overflow: hidden;
 
 
   ul {
@@ -327,6 +329,7 @@ li#englishMain2 {
     background-color: $color-light-green2;
     margin-left:0;
     padding-left:0;
+
   }
 
   a{
@@ -532,12 +535,11 @@ li#englishMain3 {
 
 #english3 {
   display: none;
-  position: absolute;
-  top: 30px;
-  left: 0;
+  position: fixed;
+  top: 50px;
   z-index: 99999;
   width: 100px;
-  font-size: 14px;
+  font-size: 13px;
   font-style: italic;
   background-color: $color-light-green2;
 
@@ -556,7 +558,7 @@ li#englishMain3 {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
   }
 
 
@@ -582,7 +584,7 @@ li#englishMain3 {
 
 
 li#englishMain3:hover {
-  #english2 {
+  #english3 {
     display: block;
 
   }
@@ -685,14 +687,19 @@ and (max-width:320px) {
 .fixedClass {
   position: fixed;
   top: 0;
-  left: 0;
-  opacity: 0.96;
+  z-index: 999;
 }
 
 
+.fixedClass2 {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
 
 #enar {
-  height: 200px;
+  width: 100%;
   border-bottom: 1px solid $contacts-bottom-line-color;
   overflow:hidden;
   background-color: white;
@@ -877,6 +884,9 @@ background-color: $drop-list-background;
 
 
 
+
+
+
 /**second-line-menu - TABLET & MOBILE**/
 
 #nav-toggle-enar2 {
@@ -898,6 +908,8 @@ and (max-width:991px)
 
 #enar2 {
   display: none;
+  background-color: white;
+  width: 100%;
 }
 
 #enar2ul{
@@ -1000,11 +1012,6 @@ background-color: white;
 
 
 
-
-
-
-
-
 #nav-toggle-enar2 {
   background-color: white;
   border-radius: 50%;
@@ -1015,6 +1022,11 @@ background-color: white;
   color:$drop-list-grey;
   font-weight: normal;
   font-size: 15px;
+}
+
+#nav-toggle-enar2 i:active {
+border: none;
+
 }
 
 
@@ -1165,9 +1177,6 @@ li#home2:hover {
 
 
 
-
-
-
 #background img{
   height: 500px;
   width: 100%;
@@ -1213,7 +1222,7 @@ li#home2:hover {
   position: absolute;
   top: 100px;
   left: 100px;
-
+width: 100%;
 }
 
 
@@ -1291,7 +1300,7 @@ overflow:hidden;
 
 
 
-/**kaip sukurti Font????**/
+
 
 
 @import "mixins";
@@ -1323,15 +1332,6 @@ overflow:hidden;
 }
 
 
-/**   TABLET
-@media screen
-and (min-width:768px)
-and (max-width:991px) {
-  #background img { height: 250px;
-  }
-}
-
- */
 
 
 
@@ -1391,9 +1391,6 @@ and (max-width:991px) {
   #blackBlock {
     display:none;
   }
-
-
-
 
 
 
@@ -1750,13 +1747,21 @@ and (max-width:991px) {
 
 }
 
-#pagination{
-  position: absolute;
 
+
+
+#pagination {
+  width: 120px;
+  height: 30px;
+  margin-top: 130px;
+  margin-left: 40%;
+z-index: 999;
 }
 
-
 #paginationBullets {
+
+  list-style-type: none;
+
 
   li {
     float: left;
@@ -1764,8 +1769,44 @@ and (max-width:991px) {
     height: 10px;
     border-radius: 50%;
     background-color: white;
-    padding-right: 5px;
+    padding-right: 10px;
+    margin-left:10px;
+  }
+
+a {
+  margin-top: 2px;
+  margin-left: 2px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+
+}
+
+}
+
+#paginationBullets a:hover {
+background-color: $color-light-green2;
+
+}
+
+
+@media screen and (max-width:767px) {
+  #pagination {
+    margin-top: 10px;
+    margin-left: 30%;
   }
 
 }
+
+@media screen
+and (min-width:768px)
+and (max-width:991px) {
+  #pagination {
+    margin-top: 60px;
+    margin-left: 35%;
+  }
+
+}
+
 
