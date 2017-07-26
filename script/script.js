@@ -1,3 +1,16 @@
+// $(window).scroll(function() {
+//
+//     if ($(window).scrollTop() > 20) {
+//         $('#enar').addClass('fixedClass');
+//     } else {
+//         $('#enar').removeClass('fixedClass');
+//     }
+// });
+//
+
+
+
+
 $('#nav-toggle1').on('click', function(){
     var myDiv = $('#contNav2');
 
@@ -37,11 +50,4 @@ $('#nav-toggle-enar2').on('click', function(){
 
 
 
-    $(window).scroll(function() {
 
-        if ($(window).scrollTop() > 20) {
-            $('enar').addClass('fixedClass');
-        } else {
-            $('enar').removeClass('fixedClass');
-        }
-    });

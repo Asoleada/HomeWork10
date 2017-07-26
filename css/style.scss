@@ -682,15 +682,28 @@ and (max-width:320px) {
 
 
 
+.fixedClass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.96;
+}
+
+
+
 #enar {
+  height: 200px;
   border-bottom: 1px solid $contacts-bottom-line-color;
+  overflow:hidden;
+  background-color: white;
+clear:both;
 }
 
 
 
 #enar{
   font-size: 12px;
-  margin-bottom: 0;
+
 
   li{
     padding-top: 15px;
@@ -1151,15 +1164,6 @@ li#home2:hover {
 
 
 
-.fixedClass {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.8;
-}
-
-
-
 
 
 
@@ -1175,6 +1179,7 @@ li#home2:hover {
 #background {
   position:relative;
   overflow:hidden;
+  clear:both;
 }
 
 
@@ -1289,14 +1294,23 @@ overflow:hidden;
 /**kaip sukurti Font????**/
 
 
+@import "mixins";
 
+@include font-face('loremipsum',"../font/loremipsum/loremipsum" );
+
+//@font-face {
+//  font-family: 'loremipsum';
+//  src: url("../font/loremipsum/loremipsum.ttf");
+//  font-weight: 300;
+//  font-style: normal;
+//}
 
 #blackBlock {
   background-color: RGBA(0, 0, 0, 0.77);
   width: 550px;
   height: 50px;
   font-family:  "loremipsum", serif;
-  font-size: 20px;
+  font-size: 16px;
   cursor: move;
 
   p{
@@ -1446,7 +1460,7 @@ and (max-width:991px) {
   #blackBlock {
     width: 450px;
     height: 32px;
-    font-size: 17px;
+    font-size: 13px;
 
     p{
       padding-left:10px;
@@ -1736,7 +1750,22 @@ and (max-width:991px) {
 
 }
 
+#pagination{
+  position: absolute;
+
+}
 
 
+#paginationBullets {
 
+  li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    padding-right: 5px;
+  }
+
+}
 

@@ -375,12 +375,21 @@ li#englishMain3:hover #english2 {
 @media screen and (max-width: 991px) {
   #enar {
     display: none; } }
-#enar {
-  border-bottom: 1px solid #e4e4e4; }
+.fixedClass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.96; }
 
 #enar {
-  font-size: 12px;
-  margin-bottom: 0; }
+  height: 200px;
+  border-bottom: 1px solid #e4e4e4;
+  overflow: hidden;
+  background-color: white;
+  clear: both; }
+
+#enar {
+  font-size: 12px; }
   #enar li {
     padding-top: 15px; }
   #enar a {
@@ -649,19 +658,14 @@ li#home2:hover #homeDrop2 {
   text-decoration: none;
   color: #24cfcc; }
 
-.fixedClass {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.8; }
-
 #background img {
   height: 500px;
   width: 100%; }
 
 #background {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  clear: both; }
 
 #settings {
   position: absolute;
@@ -738,12 +742,15 @@ li#home2:hover #homeDrop2 {
     padding-top: 12px; }
 
 /**kaip sukurti Font????**/
+@font-face {
+  font-family: "loremipsum";
+  src: url("../font/loremipsum/loremipsum.eot?") format("eot"), url("../font/loremipsum/loremipsum.woff2") format("woff2"), url("../font/loremipsum/loremipsum.woff") format("woff"), url("../font/loremipsum/loremipsum.ttf") format("truetype"), url("../font/loremipsum/loremipsum.svg#loremipsum") format("svg"); }
 #blackBlock {
   background-color: RGBA(0, 0, 0, 0.77);
   width: 550px;
   height: 50px;
   font-family: "loremipsum", serif;
-  font-size: 20px;
+  font-size: 16px;
   cursor: move; }
   #blackBlock p {
     color: white;
@@ -833,7 +840,7 @@ and (max-width:991px) {
   #blackBlock {
     width: 450px;
     height: 32px;
-    font-size: 17px; }
+    font-size: 13px; }
     #blackBlock p {
       padding-left: 10px;
       padding-top: 5px; } }
@@ -1002,5 +1009,15 @@ and (max-width:991px) {
     #purchaseText2 p {
       font-size: 12px;
       padding-top: 7px; } }
+#pagination {
+  position: absolute; }
+
+#paginationBullets li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  padding-right: 5px; }
 
 /*# sourceMappingURL=style.css.map */
