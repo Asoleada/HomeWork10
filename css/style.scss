@@ -754,6 +754,7 @@ input{
   border:none;
   padding-top:10px;
   padding-bottom: 10px;
+  outline: none;
 }
 
 }
@@ -764,6 +765,7 @@ input{
   border-radius: 50%;
 margin-left:5px;
  color: $color-light-green2;
+  outline: none;
 
 }
 
@@ -1869,57 +1871,69 @@ height: 215px;
 
 }
 
+
+
+
 .circleBox {
-  float:left;
+float:left;
   position:relative;
-  overflow:hidden;
-  width: 80px;
-  height: 80px;
-  background-color: $green-circle;
+  top: 0;
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
   //opacity: 0;
+  z-index: 9999999;
+  transition: all 0.8s;
 }
 
 
 .circle {
-position: absolute;
-  top:0;
-  width: 75px;
-  height: 75px;
+  position: absolute;
+  top:4px;
+  left: 4px;
+  width: 77px;
+  height: 77px;
   background-color: white;
   border: 1px solid $green-circle;
   border-radius: 50%;
   overflow: hidden;
 
-
-
-  transition: all 0.4s;
 }
 
+
+
+
 .iconStyle{
-    width:75px;
-    height: 75px;
-    border-radius: 50%;
-    color:$green-circle;
-    margin-left:0;
+
+  position:absolute;
+  text-align: center;
+  color:$green-circle;
   }
+
 
 .iconStyle:hover {
   color: white;
 }
 
-
-.circle:hover{
+.circle:hover {
   background-color: $green-circle;
-  color:white;
-  width: 79px;
-  height: 79px;
+  .iconStyle {color: white;}
 }
 
 
-.circle i:hover{
-  color: white;
+
+.circleBox:hover{
+  background-color: $green-circle;
+  .iconStyle {color: white;}
+  .circle {
+    background-color: $green-circle;
+    color:white;
+  }
+
 }
+
+
+
 
 
 #tv {
@@ -1927,6 +1941,7 @@ position: absolute;
   margin-top: 19px;
   margin-left:18px;
 }
+
 
 
 #mobile {
@@ -1968,6 +1983,11 @@ position: absolute;
 .greySectionText h1:hover {
   color: $green-circle;
 }
+
+
+
+
+
 
 
 

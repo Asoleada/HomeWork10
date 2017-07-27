@@ -415,13 +415,15 @@ li#englishMain3:hover #english3 {
   #searchBorder input {
     border: none;
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    outline: none; }
 
 #searchButton {
   border: none;
   border-radius: 50%;
   margin-left: 5px;
-  color: #24cfcc; }
+  color: #24cfcc;
+  outline: none; }
 
 #searchButton:hover {
   background-color: white; }
@@ -1085,41 +1087,44 @@ li#home2:hover #homeDrop2 {
 .circleBox {
   float: left;
   position: relative;
-  overflow: hidden;
-  width: 80px;
-  height: 80px;
-  background-color: #1CCDCA;
-  border-radius: 50%; }
+  top: 0;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  z-index: 9999999;
+  transition: all 0.8s; }
 
 .circle {
   position: absolute;
-  top: 0;
-  width: 75px;
-  height: 75px;
+  top: 4px;
+  left: 4px;
+  width: 77px;
+  height: 77px;
   background-color: white;
   border: 1px solid #1CCDCA;
   border-radius: 50%;
-  overflow: hidden;
-  transition: all 0.4s; }
+  overflow: hidden; }
 
 .iconStyle {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  color: #1CCDCA;
-  margin-left: 0; }
+  position: absolute;
+  text-align: center;
+  color: #1CCDCA; }
 
 .iconStyle:hover {
   color: white; }
 
 .circle:hover {
-  background-color: #1CCDCA;
-  color: white;
-  width: 79px;
-  height: 79px; }
+  background-color: #1CCDCA; }
+  .circle:hover .iconStyle {
+    color: white; }
 
-.circle i:hover {
-  color: white; }
+.circleBox:hover {
+  background-color: #1CCDCA; }
+  .circleBox:hover .iconStyle {
+    color: white; }
+  .circleBox:hover .circle {
+    background-color: #1CCDCA;
+    color: white; }
 
 #tv {
   font-size: 35px;
