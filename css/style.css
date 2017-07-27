@@ -1080,31 +1080,27 @@ li#home2:hover #homeDrop2 {
   border-bottom: 1px solid #EAEBED; }
 
 #greyField {
-  background-color: #f9fafc;
-  height: 250px; }
+  background-color: #f9fafc; }
 
 .circleBox {
   float: left;
+  position: relative;
   overflow: hidden;
-  width: 27%; }
+  width: 80px;
+  height: 80px;
+  background-color: #1CCDCA;
+  border-radius: 50%; }
 
 .circle {
-  float: left;
+  position: absolute;
+  top: 0;
   width: 75px;
   height: 75px;
   background-color: white;
   border: 1px solid #1CCDCA;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 25px;
-  margin-top: 20px;
-  -webkit-transition: width 1s, height 1s;
-  /* Safari */
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
-  transition: all 0.4ms;
-  transition-property: all;
-  transition-delay: initial; }
+  transition: all 0.4s; }
 
 .iconStyle {
   width: 75px;
@@ -1145,13 +1141,14 @@ li#home2:hover #homeDrop2 {
 
 .greySectionText {
   overflow: hidden;
-  margin-top: 5px;
-  margin-left: 0; }
+  margin-top: 5px; }
   .greySectionText h1 {
     font-size: 20px;
     text-transform: uppercase;
-    color: #324545; }
+    color: #324545;
+    margin-left: 10px; }
   .greySectionText p {
+    margin-left: 10px;
     color: #6b6b6b; }
 
 .greySectionText h1:hover {
