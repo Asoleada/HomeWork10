@@ -1100,9 +1100,11 @@ li#home2:hover #homeDrop2 {
   margin-top: 20px;
   -webkit-transition: width 1s, height 1s;
   /* Safari */
-  transition: width 1s, height 1s;
   -webkit-transition-timing-function: ease;
-  transition-timing-function: ease; }
+  transition-timing-function: ease;
+  transition: all 0.4ms;
+  transition-property: all;
+  transition-delay: initial; }
 
 .iconStyle {
   width: 75px;
