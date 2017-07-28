@@ -1,8 +1,10 @@
 body {
-  margin: 0;
+  margin:0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 
@@ -114,7 +116,7 @@ li#englishMain {
 
 
 #english {
-display: none;
+  display: none;
   position: absolute;
   top: 30px;
   left: 0;
@@ -132,15 +134,15 @@ display: none;
     padding-left:0;
   }
 
-a{
-  color: white;
-  background-color:$color-light-green2;
-  display:block;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-}
+  a{
+    color: white;
+    background-color:$color-light-green2;
+    display:block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
 
 
   i {
@@ -207,7 +209,7 @@ li#englishMain:hover {
 
 #icons a:hover {
   background-color: $hover-color-green;
- color: white;
+  color: white;
 }
 
 
@@ -231,8 +233,8 @@ li#englishMain:hover {
 
 
 #nav-toggle1 {
-     display: none;
-   }
+  display: none;
+}
 
 
 @media screen
@@ -267,7 +269,7 @@ and (max-width:991px) {
 
 
 #contNav2 {
-overflow:hidden;
+  overflow:hidden;
   background-color: $contacts-background-color;
   border-bottom: 1px solid $contacts-bottom-line-color;
 
@@ -281,9 +283,9 @@ overflow:hidden;
 
 #contact2 {
   margin-left: 100px;
-font-size: 12px;
-color: $contact-text-color;
-overflow:hidden;
+  font-size: 12px;
+  color: $contact-text-color;
+  overflow:hidden;
 
   a{
     color: $contact-text-color;
@@ -481,7 +483,7 @@ li#englishMain2:hover {
 
 
 @media screen and (max-width:767px)
- {
+{
   #contNav3  {
     display: block;
   }
@@ -519,9 +521,9 @@ li#englishMain2:hover {
   }
 
 
-li{
-  float: left;
-}
+  li{
+    float: left;
+  }
 
 }
 
@@ -652,7 +654,7 @@ li#englishMain3:hover {
   height: 15px;
   background-color: $contacts-background-color ;
   border: none;
-padding: 0;
+  padding: 0;
 
 
 
@@ -663,7 +665,7 @@ padding: 0;
     top: 0;
     left: 0;
     border-bottom: 1px solid $contacts-bottom-line-color;
-width: 100%;
+    width: 100%;
   }
 }
 
@@ -711,9 +713,9 @@ and (max-width:320px) {
 #enar {
   width: 100%;
   border-bottom: 1px solid $contacts-bottom-line-color;
-  overflow:hidden;
   background-color: white;
-clear:both;
+  clear:both;
+
 }
 
 
@@ -721,9 +723,9 @@ clear:both;
 #enar{
   font-size: 12px;
 
-
   li{
     padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   a {
@@ -738,8 +740,9 @@ clear:both;
 }
 
 #enar a:hover{
-background-color: white;
+  background-color: white;
   color: $color-light-green2;
+  padding-bottom: 10px;
 }
 
 
@@ -750,12 +753,12 @@ background-color: white;
   border-radius: 20px;
 
 
-input{
-  border:none;
-  padding-top:10px;
-  padding-bottom: 10px;
-  outline: none;
-}
+  input{
+    border:none;
+    padding-top:10px;
+    padding-bottom: 10px;
+    outline: none;
+  }
 
 }
 
@@ -763,8 +766,8 @@ input{
 #searchButton {
   border: none;
   border-radius: 50%;
-margin-left:5px;
- color: $color-light-green2;
+  margin-left:5px;
+  color: $color-light-green2;
   outline: none;
 
 }
@@ -779,10 +782,10 @@ margin-left:5px;
   width: 40px;
   height: 40px;
   display: inline-block;
-float:right;
+  float:right;
   border: 1px solid $contacts-bottom-line-color;
   border-radius: 50%;
-  overflow:hidden;
+
 
 
   i{
@@ -804,12 +807,17 @@ float:right;
   color: $color-light-green2;
 }
 
+
+
+
+
 #homeDrop {
   display:none;
   position: absolute;
   top: 80px;
   left: 0;
   z-index: 99999;
+
 }
 
 
@@ -824,7 +832,7 @@ li#home:hover {
 
 
 #homeDrop {
-background-color: $drop-list-background;
+  background-color: $drop-list-background;
   width: 200px;
   text-transform: uppercase;
 
@@ -875,9 +883,6 @@ background-color: $drop-list-background;
 
 
 
-.homepadding{
-  padding-bottom: 30px;
-}
 
 
 
@@ -986,7 +991,7 @@ and (max-width:320px) {
 
 #enarPicture2 {
   img{
-  padding-top: 15px;
+    padding-top: 15px;
   }
 }
 
@@ -1002,7 +1007,7 @@ and (max-width:320px) {
   height: 40px;
   border: 1px solid $contacts-bottom-line-color;
   border-radius: 50%;
-float:left;
+  float:left;
   margin-left:10px;
   margin-right: 10px;
   overflow:hidden;
@@ -1010,7 +1015,7 @@ float:left;
 
 
 #searchButton2 {
-background-color: white;
+  background-color: white;
   border: none;
   border-radius: 50%;
   color: $drop-list-grey;
@@ -1037,7 +1042,7 @@ background-color: white;
 }
 
 #nav-toggle-enar2 i:active {
-border: none;
+  border: none;
 
 }
 
@@ -1050,8 +1055,8 @@ border: none;
   border: 1px solid $contacts-bottom-line-color;
   border-radius: 50%;
   overflow:hidden;
-float:left;
-margin-top: 0;
+  float:left;
+  margin-top: 0;
   padding-top: 0;
 
   i{
@@ -1190,21 +1195,20 @@ li#home2:hover {
 
 
 #background {
-cursor: move;
-
-img{
-  height: 500px;
-  width: 100%;
-}
-
-}
-
-
-#background {
+  cursor: move;
   position:relative;
   overflow:hidden;
-  clear:both;
+
+
+  img{
+    height: 500px;
+    width: 100%;
+
+  }
+
 }
+
+
 
 
 #settings {
@@ -1237,7 +1241,7 @@ img{
   position: absolute;
   top: 100px;
   left: 100px;
-width: 100%;
+  width: 100%;
 }
 
 
@@ -1247,29 +1251,29 @@ width: 100%;
 
 
 #redText {
-    background-color:$red-text-block-color;
-    width: 215px;
-    height: 40px;
-    color: white;
-    font-size: 17px;
-    font-style: italic;
-    float:left;
-    cursor: move;
+  background-color:$red-text-block-color;
+  width: 215px;
+  height: 40px;
+  color: white;
+  font-size: 17px;
+  font-style: italic;
+  float:left;
+  cursor: move;
 
-    p{
-      padding-left:10px;
-      padding-top: 7px;
-    }
+  p{
+    padding-left:10px;
+    padding-top: 7px;
+  }
 
 }
 
 
 
 #redLink {
-width: 30px;
+  width: 30px;
   height: 40px;
   background-color:$dark-red-color ;
-overflow:hidden;
+  overflow:hidden;
   float:left;
 
   a{
@@ -1507,7 +1511,7 @@ and (max-width:991px) {
   border-right: 1px solid $contacts-bottom-line-color;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-background-color: white;
+  background-color: white;
 
   i{
     color: $color-light-green2;
@@ -1770,7 +1774,7 @@ and (max-width:991px) {
   height: 30px;
   margin-top: 130px;
   margin-left: 40%;
-z-index: 999;
+  z-index: 999;
 }
 
 #paginationBullets {
@@ -1788,20 +1792,20 @@ z-index: 999;
     margin-left:10px;
   }
 
-a {
-  margin-top: 2px;
-  margin-left: 2px;
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
+  a {
+    margin-top: 2px;
+    margin-left: 2px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
 
-}
+  }
 
 }
 
 #paginationBullets a:hover {
-background-color: $color-light-green2;
+  background-color: $color-light-green2;
 }
 
 #paginationBullets a:active {
@@ -1830,7 +1834,7 @@ and (max-width:991px) {
 
 #blackField {
   background-color:$semi-black-color;
-height: 215px;
+  height: 215px;
   overflow: hidden;
 
   h1 {
@@ -1875,15 +1879,15 @@ height: 215px;
 
 
 .circleBox {
-float:left;
+  float:left;
   position:relative;
   top: 0;
   width: 85px;
   height: 85px;
   border-radius: 50%;
   //opacity: 0;
-  z-index: 9999999;
-  transition: all 0.8s;
+  z-index: 9999;
+  transition: all 0.3s;
 }
 
 
@@ -1908,7 +1912,7 @@ float:left;
   position:absolute;
   text-align: center;
   color:$green-circle;
-  }
+}
 
 
 .iconStyle:hover {
@@ -1985,9 +1989,19 @@ float:left;
 }
 
 
+//#barsField {
+//  background-color: #bce8f1;
+//  overflow: hidden;
+//}
 
-
-
-
+//#barsImage {
+//overflow: hidden;
+//background-image: url("bg_header4.jpg");
+//height: 500px;
+//  background-position: center;
+//  //background-size: cover;
+//  background-repeat: no-repeat;
+//}
+//
 
 
