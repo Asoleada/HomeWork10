@@ -1087,7 +1087,6 @@ li#home2:hover #homeDrop2 {
   width: 85px;
   height: 85px;
   border-radius: 50%;
-  z-index: 9999;
   transition: all 0.3s; }
 
 .circle {
